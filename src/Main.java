@@ -3,22 +3,22 @@ public class Main {
 //        task 1
         int salary = 15000, total = 0, i = 0;
         while (total <= 2_459_000) {
-            if (i==0) {
+            if (i == 0) {
                 System.out.println("Месяц " + i + " сумма накоплений равна " + salary + " рублей.");
             }
             i++;
             total = salary + total;
-            total = total + total/100;
+            total = total + total / 100;
             System.out.println("Месяц " + i + " сумма накоплений равна " + total + " рублей.");
         }
 
 //        task 2
-        for (i=1; i<=10; i++) {
-            System.out.print(i+ " ");
+        for (i = 1; i <= 10; i++) {
+            System.out.print(i + " ");
         }
         System.out.println();
         i = 10;
-        while (i>=1) {
+        while (i >= 1) {
             System.out.print(i + " ");
             i--;
         }
@@ -66,14 +66,26 @@ public class Main {
 
         //task 7
         int oneDay = 2;
-        i=1;
-        while (i<=31 && oneDay<=31) {
-            if (i==oneDay) {
+        i = 1;
+        while (i <= 31 && oneDay <= 31) {
+            if (i == oneDay) {
                 System.out.println("Сегодня пятница " + oneDay + " число. Необходимо подготовить отчет");
-                oneDay+=7;
+                oneDay += 7;
+            }
+            i++;
+        }
+
+        //task 8
+        int presentYear = 2024;
+        int futureYear = presentYear + 100;
+        int pasteYear = presentYear - 200;
+        i = pasteYear;
+        while (i <= futureYear) {
+            if (i % 79 == 0) {
+                System.out.println(i);
             }
             i++;
         }
     }
-    }
+}
 
