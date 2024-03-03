@@ -32,5 +32,30 @@ public class Main {
             totalY = totalY + (totalY / 1000 * (birtRate - mortalityRate));
             System.out.println("Год " + i + ", численность населения составляет  " + totalY);
         }
+
+        //task 4
+        int balance = 0;
+        int invest = 15000;
+        i = 0;
+        while (balance<=12_000_000) {
+            System.out.println("Месяц " + i + " на вкладе " + balance);
+            balance = balance + invest;
+            balance = balance + balance*7/100;
+            i++;
         }
+
+        //task 5
+        while (balance<=12_000_000) {
+            if (i % 6 == 0) {
+                System.out.println("Месяц " + i + " на вкладе " + balance);
+            }
+            balance = balance + invest;
+            balance = balance + balance * 7 / 100;
+            i++;
+        }
+
+
+
     }
+    }
+
