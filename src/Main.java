@@ -13,6 +13,24 @@ public class Main {
         }
 
 //        task 2
+        for (i=1; i<=10; i++) {
+            System.out.print(i+ " ");
+        }
+        System.out.println();
+        i = 10;
+        while (i>=1) {
+            System.out.print(i + " ");
+            i--;
+        }
+        System.out.println();
 
+//        task 3
+        int totalY = 12_000_000;
+        int birtRate =17;
+        int mortalityRate =8;
+        for (i=1; i<=10; i++) {
+            totalY = totalY + (totalY / 1000 * (birtRate - mortalityRate));
+            System.out.println("Год " + i + ", численность населения составляет  " + totalY);
+        }
+        }
     }
-}
